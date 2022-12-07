@@ -11,7 +11,7 @@ classDiagram
     class DNASequence {
         +string dna_sequence_id
         +string genebank_dna_id
-        +string Nucleotide
+        +string nucleotide_sequence
         +string protein_sequence_id
     }
     

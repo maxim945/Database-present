@@ -27,7 +27,7 @@
       "genebank_dna_id": {
         "description": "Identifier for the NCBI database"
       },
-      "Nucleotide": {
+      "nucleotide_sequence": {
         "description": "The Deoxyribonucleic acid sequence of the DNA sequence object."
       },
       "protein_sequence_id": {

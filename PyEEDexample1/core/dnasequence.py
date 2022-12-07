@@ -24,11 +24,6 @@ class DNASequence(sdRDM.DataModel):
         description="Identifier for the NCBI database", default=None
     )
 
-    Nucleotide: Optional[str] = Field(
-        description="The Deoxyribonucleic acid sequence of the DNA sequence object.",
-        default=None,
-    )
-
     protein_sequence_id: Optional[str] = Field(
         description=(
             "Reference to the corresponding protein sequence to which this DNA sequence"
@@ -37,10 +32,15 @@ class DNASequence(sdRDM.DataModel):
         default=None,
     )
 
+    nucleotide_sequence: Optional[str] = Field(
+        description="The Deoxyribonucleic acid sequence of the DNA sequence object.",
+        default=None,
+    )
+
     __repo__: Optional[str] = PrivateAttr(
         default="git://github.com/maxim945/Rinkudatabase.git"
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="b24737895fdaddcfe37837c849c5493f92b9629e"
+        default="5f7be636ca11d1844dfce3c0b0e20699e4fae9f9"
     )
