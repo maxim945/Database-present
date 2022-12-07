@@ -4,20 +4,32 @@
   "external": {},
   "ProteinSequence": {
     "attributes": {
-      "name": {
+      "protein_sequence_id": {
+        "description": "Reference to the corresponding protein sequence"
+      },
+      "genbank_protein_id": {
         "description": "Systematic name of the protein."
       },
       "amino_acid_sequence": {
         "description": "The amino acid sequence of the protein sequence object."
       },
-      "nr_id": {
-        "description": "Identifier for the NCBI NR database"
+      "function": {
+        "description": "Identifier of fubtion"
       }
     },
     "docstring": null
   },
   "DNASequence": {
     "attributes": {
+      "dna_sequence_id": {
+        "description": "Reference to the corresponding dna sequence"
+      },
+      "genebank_dna_id": {
+        "description": "Identifier for the NCBI database"
+      },
+      "Nucleotide": {
+        "description": "The Deoxyribonucleic acid sequence of the DNA sequence object."
+      },
       "protein_sequence_id": {
         "description": "Reference to the corresponding protein sequence to which this DNA sequence translates"
       }

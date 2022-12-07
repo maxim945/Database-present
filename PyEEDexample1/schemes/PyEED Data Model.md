@@ -2,13 +2,17 @@
 classDiagram
     
     class ProteinSequence {
-        +string name*
-        +string amino_acid_sequence*
-        +string nr_id
+        +string protein_sequence_id
+        +string genbank_protein_id
+        +string amino_acid_sequence
+        +string function
     }
     
     class DNASequence {
-        +string protein_sequence_id*
+        +string dna_sequence_id
+        +string genebank_dna_id
+        +string Nucleotide
+        +string protein_sequence_id
     }
     
 ```

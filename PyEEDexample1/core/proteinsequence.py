@@ -16,20 +16,25 @@ class ProteinSequence(sdRDM.DataModel):
         xml="@id",
     )
 
-    name: str = Field(..., description="Systematic name of the protein.")
-
-    amino_acid_sequence: str = Field(
-        ..., description="The amino acid sequence of the protein sequence object."
+    protein_sequence_id: Optional[str] = Field(
+        description="Reference to the corresponding protein sequence", default=None
     )
 
-    nr_id: Optional[str] = Field(
-        description="Identifier for the NCBI NR database", default=None
+    genbank_protein_id: Optional[str] = Field(
+        description="Systematic name of the protein.", default=None
     )
+
+    amino_acid_sequence: Optional[str] = Field(
+        description="The amino acid sequence of the protein sequence object.",
+        default=None,
+    )
+
+    function: Optional[str] = Field(description="Identifier of fubtion", default=None)
 
     __repo__: Optional[str] = PrivateAttr(
         default="git://github.com/maxim945/Rinkudatabase.git"
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="ed0edbc29ed940d6fec032c152f9487ec6c650a2"
+        default="76bde6e9033cad0edecd4f671ed77ab1486ed624"
     )

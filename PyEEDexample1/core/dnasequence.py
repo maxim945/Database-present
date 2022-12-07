@@ -1,6 +1,7 @@
 import sdRDM
 
 from typing import Optional, Union
+from typing import Optional
 from pydantic import PrivateAttr
 from pydantic import Field
 from sdRDM.base.listplus import ListPlus
@@ -15,12 +16,25 @@ class DNASequence(sdRDM.DataModel):
         xml="@id",
     )
 
-    protein_sequence_id: str = Field(
-        ...,
+    dna_sequence_id: Optional[str] = Field(
+        description="Reference to the corresponding dna sequence", default=None
+    )
+
+    genebank_dna_id: Optional[str] = Field(
+        description="Identifier for the NCBI database", default=None
+    )
+
+    Nucleotide: Optional[str] = Field(
+        description="The Deoxyribonucleic acid sequence of the DNA sequence object.",
+        default=None,
+    )
+
+    protein_sequence_id: Optional[str] = Field(
         description=(
             "Reference to the corresponding protein sequence to which this DNA sequence"
             " translates"
         ),
+        default=None,
     )
 
     __repo__: Optional[str] = PrivateAttr(
@@ -28,5 +42,5 @@ class DNASequence(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="ed0edbc29ed940d6fec032c152f9487ec6c650a2"
+        default="76bde6e9033cad0edecd4f671ed77ab1486ed624"
     )
