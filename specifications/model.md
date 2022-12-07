@@ -28,6 +28,6 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
 - __Nucleotide__
   - Type: string
   - Description: The Deoxyribonucleic acid sequence of the DNA sequence object.
-  ### __protein_sequence_id__
+  ### Protein Sequence ID
     - Type: string
     - Description: Reference to the corresponding protein sequence to which this DNA sequence translates 
