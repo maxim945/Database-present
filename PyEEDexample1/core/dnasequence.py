@@ -42,5 +42,5 @@ class DNASequence(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="8ca6f6f4492a0d6f34639dcb51ed658257ac95f3"
+        default="17f8c5cf8909fc9efa746272e923cc21ee7b9316"
     )
