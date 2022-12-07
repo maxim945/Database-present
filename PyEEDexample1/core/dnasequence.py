@@ -25,6 +25,11 @@ class DNASequence(sdRDM.DataModel):
     )
 
     Nucleotide: Optional[str] = Field(
+        description="The Deoxyribonucleic acid sequence of the DNA sequence object.",
+        default=None,
+    )
+
+    protein_sequence_id: Optional[str] = Field(
         description=(
             "Reference to the corresponding protein sequence to which this DNA sequence"
             " translates"
@@ -37,5 +42,5 @@ class DNASequence(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="14b6e88013f22b63c8dcfc45760f9edf1891e3b9"
+        default="740c6670cb011187100ae92bd9bf5008fc8afb36"
     )
