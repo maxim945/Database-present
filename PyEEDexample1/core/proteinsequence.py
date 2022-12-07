@@ -27,10 +27,14 @@ class ProteinSequence(sdRDM.DataModel):
 
     function: Optional[str] = Field(description="Identifier of fubtion", default=None)
 
+    protein_sequence_id: Optional[str] = Field(
+        description="Reference to the corresponding protein sequence", default=None
+    )
+
     __repo__: Optional[str] = PrivateAttr(
         default="git://github.com/maxim945/Rinkudatabase.git"
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="17f8c5cf8909fc9efa746272e923cc21ee7b9316"
+        default="b24737895fdaddcfe37837c849c5493f92b9629e"
     )
