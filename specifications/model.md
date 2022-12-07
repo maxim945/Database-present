@@ -13,3 +13,9 @@ PyEED is a Python-encoded data model of an Enzyme Engineering Database. It suppo
 - __nr_id__
   - Type: string
   - Description: Identifier for the NCBI NR database
+
+### DNASequence
+
+- __protein_sequence_id*__
+  - Type: string
+  - Description: Reference to the corresponding protein sequence to which this DNA sequence translates 
