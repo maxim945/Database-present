@@ -16,10 +16,6 @@ class ProteinSequence(sdRDM.DataModel):
         xml="@id",
     )
 
-    protein_sequence_id: Optional[str] = Field(
-        description="Reference to the corresponding protein sequence", default=None
-    )
-
     genbank_protein_id: Optional[str] = Field(
         description="Systematic name of the protein.", default=None
     )
@@ -36,5 +32,5 @@ class ProteinSequence(sdRDM.DataModel):
     )
 
     __commit__: Optional[str] = PrivateAttr(
-        default="76bde6e9033cad0edecd4f671ed77ab1486ed624"
+        default="8db5b50618c5df0d4e3d2f73c29e4ffb8373861d"
     )
