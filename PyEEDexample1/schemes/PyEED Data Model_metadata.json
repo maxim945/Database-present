@@ -15,13 +15,5 @@
       }
     },
     "docstring": null
-  },
-  "DNASequence": {
-    "attributes": {
-      "protein_sequence_id": {
-        "description": "Reference to the corresponding protein sequence to which this DNA sequence translates"
-      }
-    },
-    "docstring": null
   }
 }

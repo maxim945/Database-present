@@ -7,8 +7,4 @@ classDiagram
         +string nr_id
     }
     
-    class DNASequence {
-        +string protein_sequence_id*
-    }
-    
 ```
