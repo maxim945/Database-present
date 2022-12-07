@@ -2,10 +2,9 @@ import sdRDM
 
 from typing import Optional, Union
 from pydantic import PrivateAttr
+from pydantic import Field
 from sdRDM.base.listplus import ListPlus
 from sdRDM.base.utils import forge_signature, IDGenerator
-
-from pydantic import Field
 
 
 @forge_signature
@@ -15,6 +14,7 @@ class DNASequence(sdRDM.DataModel):
         default_factory=IDGenerator("dnasequenceINDEX"),
         xml="@id",
     )
+
     protein_sequence_id: str = Field(
         ...,
         description=(
@@ -26,6 +26,7 @@ class DNASequence(sdRDM.DataModel):
     __repo__: Optional[str] = PrivateAttr(
         default="git://github.com/maxim945/Rinkudatabase.git"
     )
+
     __commit__: Optional[str] = PrivateAttr(
-        default="e33d4626923743fb9c990ac83d5d3345ebf6e63f"
+        default="39e585f2114ac7a13cac72b4b7e30f914110f300"
     )

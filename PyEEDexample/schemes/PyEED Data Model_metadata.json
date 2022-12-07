@@ -12,60 +12,6 @@
       },
       "nr_id": {
         "description": "Identifier for the NCBI NR database"
-      },
-      "uniprot_id": {
-        "description": "Identifier for the UniProt database"
-      },
-      "pdb_id": {
-        "description": "Identifier for the PDB database",
-        "multiple": "True"
-      }
-    },
-    "docstring": null
-  },
-  "Organism": {
-    "attributes": {
-      "ncbi_taxonomy_id": {
-        "description": "NCBI Taxonomy ID to identify the organism"
-      }
-    },
-    "docstring": null
-  },
-  "Domain": {
-    "attributes": {
-      "name": {
-        "description": "Name of the annotated domain"
-      },
-      "start_position": {
-        "description": "Position in the sequence where the domain starts"
-      },
-      "end_position": {
-        "description": "Position in the sequence where the domain ends"
-      }
-    },
-    "docstring": null
-  },
-  "Equivalence": {
-    "attributes": {
-      "reference_position": {
-        "description": "Equivalent position in the reference sequence"
-      },
-      "sequence_position": {
-        "description": "Position that is equivalent to the reference sequence position that is also given"
-      }
-    },
-    "docstring": null
-  },
-  "Annotation": {
-    "attributes": {
-      "start_position": {
-        "description": "Start position of the annotation. A single start position without an end corresponds to a single amino acid"
-      },
-      "end_position": {
-        "description": "Optional end position if the annoation contains more than a single amino acid."
-      },
-      "function": {
-        "description": "Function that is found in the annotated amino acid or sub-sequence"
       }
     },
     "docstring": null
