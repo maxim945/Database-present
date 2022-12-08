@@ -18,22 +18,5 @@
       }
     },
     "docstring": null
-  },
-  "DNASequence": {
-    "attributes": {
-      "dna_sequence_id": {
-        "description": "Reference to the corresponding dna sequence"
-      },
-      "genebank_dna_id": {
-        "description": "Identifier for the NCBI database"
-      },
-      "nucleotide_sequence": {
-        "description": "The Deoxyribonucleic acid sequence of the DNA sequence object."
-      },
-      "protein_sequence_id": {
-        "description": "Reference to the corresponding protein sequence to which this DNA sequence translates"
-      }
-    },
-    "docstring": null
   }
 }

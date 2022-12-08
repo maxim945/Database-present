@@ -8,11 +8,4 @@ classDiagram
         +string function
     }
     
-    class DNASequence {
-        +string dna_sequence_id
-        +string genebank_dna_id
-        +string nucleotide_sequence
-        +string protein_sequence_id
-    }
-    
 ```
