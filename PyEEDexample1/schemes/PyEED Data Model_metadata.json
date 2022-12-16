@@ -4,16 +4,16 @@
   "external": {},
   "ProteinSequence": {
     "attributes": {
-      "protein_sequence_id": {
-        "description": "Reference to the corresponding protein sequence"
-      },
-      "genbank_protein_id": {
+      "protein_databank_id": {
         "description": "Systematic name of the protein."
       },
-      "amino_acid_sequence": {
+      "lenght": {
+        "description": "Reference to the corresponding protein sequence"
+      },
+      "quary_seq": {
         "description": "The amino acid sequence of the protein sequence object."
       },
-      "function": {
+      "match_seq": {
         "description": "Identifier of fubtion"
       }
     },

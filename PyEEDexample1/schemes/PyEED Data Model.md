@@ -2,10 +2,10 @@
 classDiagram
     
     class ProteinSequence {
-        +string protein_sequence_id
-        +string genbank_protein_id
-        +string amino_acid_sequence
-        +string function
+        +string protein_databank_id
+        +string lenght
+        +string quary_seq
+        +string match_seq
     }
     
 ```
