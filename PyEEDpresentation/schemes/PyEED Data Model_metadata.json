@@ -18,22 +18,5 @@
       }
     },
     "docstring": null
-  },
-  "ntequence": {
-    "attributes": {
-      "protein_databank_id": {
-        "description": "Systematic name of the protein."
-      },
-      "lenght": {
-        "description": "Reference to the corresponding protein sequence"
-      },
-      "quary_seq": {
-        "description": "The amino acid sequence of the protein sequence object."
-      },
-      "match_seq": {
-        "description": "Identifier of"
-      }
-    },
-    "docstring": null
   }
 }
