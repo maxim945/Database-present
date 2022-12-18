@@ -19,7 +19,7 @@
     },
     "docstring": null
   },
-  "DNAequence": {
+  "ntequence": {
     "attributes": {
       "protein_databank_id": {
         "description": "Systematic name of the protein."
