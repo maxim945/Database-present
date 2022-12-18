@@ -8,4 +8,9 @@ classDiagram
         +string match_seq
     }
     
+    class DNASequence {
+        +string protein_databank_id
+        +string dna_equence
+    }
+    
 ```

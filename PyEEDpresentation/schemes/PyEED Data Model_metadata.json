@@ -8,13 +8,24 @@
         "description": "Systematic name of the protein."
       },
       "lenght": {
-        "description": "Reference to the corresponding protein sequence"
+        "description": "lenght to the corresponding protein sequence"
       },
       "quary_seq": {
         "description": "The amino acid sequence of the protein sequence object."
       },
       "match_seq": {
-        "description": "Identifier of fubtion"
+        "description": "Identifier of matching sequence"
+      }
+    },
+    "docstring": null
+  },
+  "DNASequence": {
+    "attributes": {
+      "protein_databank_id": {
+        "description": "Systematic name of the protein."
+      },
+      "dna_equence": {
+        "description": "Reference to the corresponding protein sequence"
       }
     },
     "docstring": null
